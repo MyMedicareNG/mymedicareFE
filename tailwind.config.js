@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      display: ["SF Pro Display", "sans-serif"],
+      body: ["SF Pro Display", "sans-serif"],
+    },
     screens: {
       'sm': '280px',
       'md': '325px',
