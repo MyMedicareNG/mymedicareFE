@@ -34,7 +34,8 @@ export const navLink = [
     {
         title: "settings",
         icon: "",
-        path: "/patient-settings"
+        path: "/patient-settings",
+        gap: true
     },
     {
         title: "help center",

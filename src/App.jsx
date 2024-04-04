@@ -5,6 +5,10 @@ import Signin from "./auth/Signin";
 import Signup from "./auth/Signup";
 import OtpVerification from "./auth/OtpVerification";
 import Terms from "./terms_conditions/Terms";
+import PatientProtectedRoute from './components/PatientProtectedRoute';
+import PatientDashboard from "./pages/patient/PatientDashboard";
+
+
 
 const App = () => {
   return (
@@ -15,6 +19,9 @@ const App = () => {
         <Route path="/sign-up" element={<Signup/>}/>
         <Route path="/otp-verification" element={<OtpVerification/>}/>
         <Route path="/terms-&-conditions" element={<Terms/>}/>
+        <Route element={<PatientProtectedRoute/>}>
+          <Route path='/patient-dashboard' element={<PatientDashboard/>}/>
+        </Route>
       </Routes>
     </BrowserRouter>
   )
