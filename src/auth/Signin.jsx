@@ -12,6 +12,7 @@ import { axiosClient } from "../axios";
 const Signin = () => {
   const [showPassword, setShowPassword] = useState("password");
   const [post, setPost] = useState([]);
+  
 
   //Title: Sign up form validation using formik
   //Author: Damilare Ajayi
@@ -35,7 +36,7 @@ const Signin = () => {
   })
   return (
     <section className='signup w-full h-screen bg-white'>
-      <div className='lg:mx-8 sm:px-3 sm:py-5 overflow-hidden flex flex-row justify-between '>
+      <div className='lg:mx-8 sm:px-3 sm:py-5 lg:py-0 overflow-hidden flex flex-row justify-between '>
         <div className='registration lg:mx-16 lg:w-[40%] sm:w-full flex-col align-middle justify-center h-full lg:my-16'>
             <div className='logo'>
               <img 
@@ -52,21 +53,21 @@ const Signin = () => {
             <div className="signupForm w-full"> 
           <form>
             <div className="email flex flex-col mb-2">
-                <label className="capitalize text-neutral-100 text-xl font-semibold mb-1">email</label>
+                <label className="capitalize text-neutral-100 text-xl font-semibold mb-2">email</label>
                 <input 
                   type="text"
                   placeholder="Jessie@email.com"
-                  className="outline-none border-4 border-neutral-50 px-2 py-3 w-full text-lg font-medium rounded-lg focus:border-primary-100"
+                  className="outline-none border-2 border-neutral-50 p-2 w-full text-lg font-medium rounded-lg focus:border-primary-100"
                 />
               </div>
 
-              <div className="password flex flex-col my-3">
-              <label className="capitalize text-neutral-100 text-xl font-semibold mb-1">password</label>
-              <div className="border-neutral-50 rounded-lg border-4 focus:border-primary-100 flex flex-row items-center">
+              <div className="password flex flex-col my-5">
+              <label className="capitalize text-neutral-100 text-xl font-semibold mb-2">password</label>
+              <div className="border-neutral-50 rounded-lg border-2 focus:border-primary-100 flex flex-row items-center">
                 <input 
                   type={showPassword ? "password": "text"}
                   placeholder="*********"
-                  className="outline-none border-none px-2 py-3 w-full text-lg font-medium rounded-lg "
+                  className="outline-none border-none p-2 w-full text-lg font-medium rounded-lg "
                 />
                 <span
                   onClick={() => setShowPassword((prev) => !prev)}
@@ -81,21 +82,21 @@ const Signin = () => {
             </div>
 
             <div className="createAccount w-full text-center my-2">
-              <button className="font-bold capitalize text-lg outline-none hover:border-4 active:border-4 bg-primary-100 rounded-lg text-white w-full py-4 hover:bg-transparent hover:text-primary-100 hover:border-primary-100  active:bg-transparent active:text-primary-100 active:border-primary-100 ">
-                sign in
-              </button>
-            </div>
+                <button className="font-bold capitalize text-lg outline-none hover:border-2 active:border-2 bg-primary-100 rounded-lg text-white w-full hover:bg-transparent hover:text-primary-100 hover:border-primary-100  active:bg-transparent active:text-primary-100 active:border-primary-100 h-16">
+                  log in
+                </button>
+              </div>
 
-            <p className="flex flex-col items-center justify-center py-2 text-neutral-50">or</p>
+            <p className="flex flex-col items-center justify-center my-2 text-neutral-50">or</p>
 
-            <div className="googleSignup sm:w-full rounded-lg border-4 border-neutral-50 cursor-pointer">
-              <div className="flex flex-row items-center justify-center space-x-1 py-4 ">
+            <div className="googleSignup w-full rounded-lg border-2 border-neutral-50 cursor-pointer">
+              <div className="flex flex-row items-center justify-center space-x-1 h-16 ">
                 <img src={google} alt="MyMedicare" />
                 <p className="first-letter:capitalize last-letter:capitalize text-neutral-50">sign in with google</p>
               </div>
             </div>
 
-            <div className="signUp mt-2 text-center">
+            <div className="signUp my-2 text-center">
               <p className="text-md first-letter:capitalize text-neutral-50">don't have an account? <Link className="text-primary-100 first-letter:capitalize" to={"/sign-up"}>sign up</Link></p>
             </div>
           </form>

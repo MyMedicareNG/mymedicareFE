@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const Slider = ({
     autoSlide = false,
-    autoSlideInterval = 3000 ,
+    autoSlideInterval = 3000,
 }) => {
     const words = [
         "With MyMedicare, you can get access to a doctor without leaving the comfort of your home!",
@@ -30,7 +30,7 @@ const Slider = ({
     
     return (
         <div className="overflow-hidden relative">
-            <div className="text-white font-bold text-lg leading-relaxed tracking-wide text-center mb-5 transition-transform ease-out duration-500" >
+            <div className="text-white font-bold text-lg leading-relaxed tracking-wide text-center mb-8 transition-transform ease-out duration-500" >
                 {wordData}
             </div>
             <div className="absolute bottom-4 right-0 left-0">

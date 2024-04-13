@@ -12,19 +12,21 @@ export default {
     screens: {
       'sm': '280px',
       'md': '325px',
-      'lg': '768px',
-      'xl': '1080px'
+      'lg': '1080px',
+      // 'xl': '1080px'
     },
     extend: {
       colors: {
         "primary-100": "#0058E6",
         "neutral-100": "#1E293B",
-        "neutral-50": "#94A3BB"
+        "neutral-50": "#94A3BB",
+        "neutral-200": "#F1F5F9"
       },
       backgroundColor: {
         "primary-100": "#0058E6",
         "neutral-100": "#1E293B",
-        "neutral-50": "#94A3BB"
+        "neutral-50": "#94A3BB",
+        "neutral-200": "#F1F5F9"
       }
     },
   },

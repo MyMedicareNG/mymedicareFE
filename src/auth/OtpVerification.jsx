@@ -26,16 +26,16 @@ const OtpVerification = () => {
           
             <div className="otpCode flex flex-row gap-x-4 items-center w-full mt-10 mb-5">
                 <div>
-                    <input type="text" className="border-none outline-none bg-neutral-50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
+                    <input type="text" className="border-none outline-none bg-neutral-50/50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
                 </div>
                 <div>
-                    <input type="text" className="border-none outline-none bg-neutral-50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
+                    <input type="text" className="border-none outline-none bg-neutral-50/50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
                 </div>
                 <div>
-                    <input type="text" className="border-none outline-none bg-neutral-50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
+                    <input type="text" className="border-none outline-none bg-neutral-50/50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
                 </div>
                 <div>
-                    <input type="text" className="border-none outline-none bg-neutral-50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
+                    <input type="text" className="border-none outline-none bg-neutral-50/50 lg:w-[50%] sm:w-full rounded-md lg:py-5 sm:py-5 text-center text-2xl font-bold"/>
                 </div>
             </div>
             
