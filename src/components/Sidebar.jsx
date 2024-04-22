@@ -16,7 +16,7 @@ const Sidebar = ({ children }) => {
   return (
     <div className="flex flex-col lg:flex-row h-screen overflow-hidden">
       {/* Desktop View */}
-      <div className="lg:flex hidden border-r-4 border-neutral-50 w-[25%] overflow-y-auto">
+      <div className="lg:flex hidden border-r-4 border-neutral-50 w-[20%] overflow-y-auto">
         <div className="custom-scrollbar-container h-full">
           <div className="menuItems mx-5 my-8">
             <div className="logo flex items-center">
@@ -41,8 +41,8 @@ const Sidebar = ({ children }) => {
       </div>
       
       {/* Content Area */}
-      <div className="bg-neutral-50/50 lg:[75%] w-full h-full overflow-auto">
-        <div className="children sm:my-16 lg:my-32">{children}</div>
+      <div className="bg-neutral-50/50 lg:w-[80%] sm:w-full h-full overflow-auto">
+        <div className="children sm:my-16 lg:my-32 w-full">{children}</div>
       </div>
     </div>
   );

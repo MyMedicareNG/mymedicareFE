@@ -1,6 +1,3 @@
- //Title: Sign up form 
-  //Author: Damilare Ajayi
-
 
 import { useState } from "react";
 import logo from "../assets/images/logo.png";
@@ -90,7 +87,7 @@ const Signup = () => {
             </div>
             <p className="flex flex-col items-center justify-center py-2 text-neutral-50 my-1">or</p>
             <div className="signupForm w-full "> 
-            <form>
+            <form onSubmit={formik.handleSubmit}>
               <div className="firstName flex flex-col mb-2 w-full">
                 <label className="capitalize text-neutral-100 text-xl font-semibold mb-2">first name</label>
                 <input 
@@ -170,34 +167,6 @@ const Signup = () => {
                     />
                   </div>
                 </div>
-
-              {/* <div className="password flex flex-col mb-2">
-                <label className="capitalize text-neutral-100 text-xl font-semibold mb-2">password</label>
-                <div className="border-neutral-50 rounded-lg border-2 focus:border-primary-100 flex flex-row items-center">
-                  <input 
-                    id = "password"
-                    value = {formik.values.password}
-                    onChange = {formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    type={showPassword ? "password": "text"}
-                    placeholder="*********"
-                    className="outline-none border-none px-2 py-3 w-full text-lg font-medium rounded-lg "
-                  />
-                  <span
-                    onClick={() => setShowPassword((prev) => !prev)}
-                    className="cursor-pointer font-bold text-primary-100 mx-2"
-                  >
-                    {
-                      showPassword && showPassword ?
-                      (<PiEyeClosedLight size={28}/>):(<PiEyeLight size={28}/>)
-                    }
-                  </span>
-                </div>
-                {
-                formik.touched.password && formik.errors.password ? <p className="text-red-500 text-sm font-bold">{formik.errors.password}</p>: null
-                }
-              </div> */}
-
               <div className="country mb-2">
                 <label className="capitalize text-neutral-100 text-xl font-semibold">choose your country</label>
                 <select 
@@ -231,7 +200,7 @@ const Signup = () => {
                   </span></p>
               </div>
               <div className="createAccount w-full text-center">
-                <button className="font-bold capitalize text-lg outline-none hover:border-2 active:border-2 bg-primary-100 rounded-lg text-white w-full hover:bg-transparent hover:text-primary-100 hover:border-primary-100  active:bg-transparent active:text-primary-100 active:border-primary-100 h-16">
+                <button type="submit" className="font-bold capitalize text-lg outline-none hover:border-2 active:border-2 bg-primary-100 rounded-lg text-white w-full hover:bg-transparent hover:text-primary-100 hover:border-primary-100  active:bg-transparent active:text-primary-100 active:border-primary-100 h-16">
                   create account
                 </button>
               </div>

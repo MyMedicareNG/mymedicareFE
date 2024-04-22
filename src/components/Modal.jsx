@@ -1,7 +1,5 @@
 
 
-
-
 const Modal = ({visible, children}) => {
     return (
       <div>
